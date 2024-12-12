@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Toto from '../components/Toto.astro';
+import Tata from '../components/Tata';
+import classe from '../data/eleve.json';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			
+		<Toto title="Je suis le titre"  description="Je suis la description"/>
+
+		<Tata /> 
+			
+		<>
+			{
+				classe.eleves.map((eleve) => (
+					<li>{eleve.prenom} {eleve.nom}</li>
+					<li>{eleve.nom}</li>
+					<li>{eleve.date_naissance}</li>
+				))
+			}
+		
+		</ul>
+
+			
+			
+		</main>
+		<Footer />
+	</body>
+</html>

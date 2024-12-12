@@ -1,0 +1,22 @@
+{
+    "eleves": [
+        {
+            "id": 1,
+            "nom": "Roger",
+            "prenom": "Olivia",
+            "date_naissance": "01/01/2000"
+        },
+        {
+            "id": 2,
+            "nom": "Gagnereaux", 
+            "prenom": "Anais",
+            "date_naissance": "01/01/2000"
+        },
+        {
+            "id": 3,
+            "nom": "Roques", 
+            "prenom": "Lola",
+            "date_naissance": "01/01/2000"
+        }
+        ]
+}
